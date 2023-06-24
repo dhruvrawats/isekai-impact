@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r80/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js"></script>
+
+    <title>Rabbit Run</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="world">
+    </div>
+    <div id="gameoverInstructions">
+        Game Over
+    </div>
+    <div id="dist">
+        <div class="label">distance</div>
+        <div id="distValue">000</div>
+    </div>
+
+    <div id="instructions">Click to jump<span class="lightInstructions"> — Grab the carrots / avoid the
+            hedgehogs</span></div>
+
+
+    <div id="credits">
+        <p><a href="#" target="blank">ISEKAI</a></p>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="/helpers/enVariables.js"></script>
+    <script src="/helpers/checkUser.js"></script>
+    <script src="/helpers/createDb.js"></script>
+</body>
+
+</html>

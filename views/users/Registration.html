@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <title>Registration</title>
+  <link rel="stylesheet" href="../../public/stylesheets/Registration.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+</head>
+
+<body>
+  <div class="bg-img">
+    <div class="content" id="main-page">
+      <header>Sign-Up</header>
+      <form action="../dashboard/demodash.html">
+        <div class="field">
+          <span class="fa fa-user"></span>
+          <input type="text" name="first-name" id="txtName" required placeholder="Name">
+        </div>
+        <div class="field space">
+          <span class="fa fa-envelope"></span>
+          <input type="text" name="email" required placeholder="Email" id="txtEmail_register">
+        </div>
+
+        <div class="field space">
+          <span class="fa fa-lock"></span>
+          <input type="password" class="pass-key" id="txtPassword_register" name="password" required
+            placeholder="Password">
+          <span class="show">SHOW</span>
+        </div>
+        <div class="field space">
+          <input type="submit" value="Sign-Up" id="btnSignup">
+        </div>
+      </form>
+      <div class="register">
+        Or Register with
+      </div>
+      <div class="links">
+        <ul>
+          <li><i class="fab fa-facebook-f" id="facebook" type="submit"></i></li>
+          <li><i class="fab fa-twitter" id="twitter" type="submit"></i></li>
+          <li><i class="fab fa-github" id="github" type="submit"></i></li>
+          <li><i class="fab fa-google" id="google" type="submit"></i></li>
+        </ul>
+      </div>
+
+      <div class="signup">
+        Already have an account?
+        <a href="./Login Form.html">Login Now</a>
+      </div>
+    </div>
+    <div class="content" id="redirect-page" hidden>
+
+      <header>EMAIL VERIFICATION SENT</header>
+      <div class="register">
+        You will be redirected to game dashboard in 10 seconds
+      </div>
+    </div>
+  </div>
+  <script>
+    const pass_field = document.querySelector('.pass-key');
+    const showBtn = document.querySelector('.show');
+    showBtn.addEventListener('click', function () {
+      if (pass_field.type === "password") {
+        pass_field.type = "text";
+        showBtn.textContent = "HIDE";
+        showBtn.style.color = "#3498db";
+      } else {
+        pass_field.type = "password";
+        showBtn.textContent = "SHOW";
+        showBtn.style.color = "#222";
+      }
+    });
+  </script>
+  <script src="../../public/javascript/Registration.js"></script>
+  <script src="../../helpers/enVariables.js"></script>
+  <script src="../../helpers/updateProfile.js"></script>
+  <script src="../../helpers/redirect.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+.bg-img {
+  background: url(../images/5.jpeg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+.content header {
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.field {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.94);
+}
+.field span {
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.space {
+  margin-top: 16px;
+}
+.show {
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.pass-key:valid ~ .show {
+  display: block;
+}
+.pass {
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.pass:hover a {
+  text-decoration: underline;
+}
+.field input[type="submit"] {
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.field input[type="submit"]:hover {
+  background: #2691d9;
+}
+.login {
+  color: white;
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+}
+.links {
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+/* .facebook,
+.instagram {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.facebook {
+  margin-left: 0;
+  background: #4267b2;
+  border: 1px solid #3e61a8;
+}
+.instagram {
+  background: #6cc644;
+  border: 1px solid #df2060;
+}
+.facebook:hover {
+  background: #3e61a8;
+}
+.instagram:hover {
+  background: #df2060;
+}*/
+/* .links i {
+  font-size: 17px;
+}
+i span {
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}  */
+
+ul{
+  display: flex;
+}
+ul li{
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  line-height: 40px;
+  border-radius: 20%;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+ul li:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  /* background: #d35400; */
+  border-radius: 20%;
+  transform: scale(.9);
+  z-index: -1;
+  transition: .5s;
+}
+ul li:nth-child(1):before{
+  background: #4267B2;
+}
+ul li:nth-child(2):before{
+  background: #1DA1F2;
+}
+ul li:nth-child(3):before{
+  background: #6cc644;
+}
+ul li:nth-child(4):before{
+  background: #2867B2;
+}
+
+ul li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+}
+ul li:nth-child(1):hover:before{
+  box-shadow: 0 0 15px #4267B2;
+}
+ul li:nth-child(2):hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+ul li:nth-child(3):hover:before{
+  box-shadow: 0 0 15px #6cc644;
+}
+ul li:nth-child(4):hover:before{
+  box-shadow: 0 0 15px #2867B2;
+}
+
+ul li:nth-child(1):hover{
+  color: #456cba;
+  box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2;
+}
+ul li:nth-child(2):hover{
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+ul li:nth-child(3):hover{
+  color: #6cc644;
+  box-shadow: 0 0 15px #6cc644;
+  text-shadow: 0 0 15px #6cc644;
+}
+ul li:nth-child(4):hover{
+  color: #2a6cbb;
+  box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2;
+}
+
+.signup {
+  font-size: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+}
+.signup a {
+  color: #3498db;
+  text-decoration: none;
+}
+.signup a:hover {
+  text-decoration: underline;
+}

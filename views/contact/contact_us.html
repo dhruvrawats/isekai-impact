@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" ></script>
+    <script>
+        $(function () {
+            $("#footer").load("./views/partials/footer.html");
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/stylesheets/contact_us.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <div class="content">
+            <div class="content-form">
+                <form>
+                    <div class="form">
+                        <div class="right">
+                            <div class="contact-form">
+                                <input type="text" required>
+                                <span>Full Name</span>
+                            </div>
+
+                            <div class="contact-form">
+                                <input type="E-mail" required>
+                                <span>E-mail Id</span>
+                            </div>
+                            <div class="contact-form">
+                                <textarea name="text">
+
+                  </textarea>
+                                <span> Type your Message....</span>
+                            </div>
+
+                            <div class="contact-form">
+                                <input type="submit" name="submit">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+            <div class="empty">
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="" id="footer"></div>
+        </footer>
+
+</body>
+
+</html>
